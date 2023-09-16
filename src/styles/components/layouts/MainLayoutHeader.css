@@ -1,0 +1,111 @@
+.mainLayout_header_container {
+    background-color: #ffffffdb;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+}
+
+.mainLayout_header_logotype {
+    height: 100px;
+    cursor: pointer;
+    margin-left: 20px;
+    transform: scale(1);
+    transition: transform 1s;
+    width: 200px;
+}
+
+.mainLayout_header_logotype:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+.mainLayout_header_navbar {
+    display: flex;
+    gap: 20px;
+    color: #1e1e1eb1;
+}
+
+.mainLayout_header_link {
+    transition: color 0.6s;
+    height: 30px;
+    border-bottom: 2px solid transparent;
+}
+
+.mainLayout_header_link:hover {
+    color: #3579C9;
+    border-bottom: 2px solid #3579c9;
+    transition: color 0.6s, border-color 1s;
+}
+
+.mainLayout_header_btnContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.mainLayout_header_btnLogin {
+    width: 100px;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid #3579C9;
+    background-color: transparent;
+    color: #3579C9;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.mainLayout_header_btnLogin:hover {
+    background-color: #357ac9c9;
+    color: white;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.mainLayout_header_btnDemo {
+    width: 160px;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3579C9;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    margin-right: 40px;
+}
+
+.mainLayout_header_btnDemo:hover {
+    background-color: #6292ca;
+    transition: background-color 0.5s;
+}
+
+@media (max-width: 1000px) {
+    .mainLayout_header_navbar {
+        display: none;
+    }
+
+    .mainLayout_header_btnLogin {
+        display: none;
+    }
+
+    .mainLayout_header_btnDemo {
+        display: none;
+    }
+
+    .mainLayout_header_container {
+        padding: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .mainLayout_header_logotype {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,65 @@
+.main_s7_container {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    color: #414141;
+}
+
+.main_s7_informationContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+.main_s7_title {
+    font-size: 60px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.main_s7_text {
+    font-size: 26px;
+    text-align: center;
+    padding: 10px;
+}
+
+.main_s7_text1 {
+    color: #3579C9;
+    font-size: 30px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+.main_s7_button {
+    width: 300px;
+    height: 55px;
+    border-radius: 5px;
+    border: none;
+    background-color: #3579C9;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.main_s7_button:hover {
+    background-color: #6292ca;
+    transition: background-color 0.5s;
+}
+
+
+@media (max-width: 520px) {
+    .main_s7_title {
+        font-size: 40px;
+    }
+
+    .main_s7_text {
+        font-size: 20px;
+    }
+}
