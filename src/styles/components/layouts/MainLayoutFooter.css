@@ -5,6 +5,8 @@
     padding: 40px 50px;
     gap: 40px;
     background-image: url('../../../assets/images/png/footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .mainLayout_footer_titles {

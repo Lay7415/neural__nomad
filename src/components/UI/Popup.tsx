@@ -13,7 +13,7 @@ const Popup = (props: Props) => {
   return (
     <>
       {isShow && (
-        <div style={styles.container} className={classes.container}></div>
+        <div style={styles.container} className={classes.container}>{children}</div>
       )}
     </>
   );
