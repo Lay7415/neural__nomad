@@ -14,21 +14,22 @@ const MainHeader = () => {
       />
       <nav className="mainLayout_header_navbar">
         {navLinks.map((item, index) => {
-          if (location.pathname !== item.path) {
-            return (
-              <Link
-                key={index}
-                to={item.path}
-                className="mainLayout_header_link"
-              >
-                {item.name}
-              </Link>
-            );
-          }
+          return (
+            <Link
+              style={{
+                borderBottom:
+                  location.pathname === item.path ? "1px solid white" : "",
+              }}
+              key={index}
+              to={item.path}
+              className="mainLayout_header_link"
+            >
+              {item.name}
+            </Link>
+          );
         })}
       </nav>
       <div className="mainLayout_header_btnContainer">
-        <button className="mainLayout_header_btnLogin">Войти</button>
         <button className="mainLayout_header_btnDemo">Демо</button>
       </div>
     </header>
