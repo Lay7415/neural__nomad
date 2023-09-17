@@ -1,0 +1,23 @@
+.main_demostrationContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+}
+
+.main_demostrationTitle {
+    font-size: 40px;
+    margin: 20px 0;
+    color: white;
+}
+
+.main_demostrationVideo {
+    width: 60vw;
+    height: 60vh;
+    border: none;
+    border-radius: 10px;
+}

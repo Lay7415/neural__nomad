@@ -1,7 +1,7 @@
 import Banner from '../../components/UI/Banner';
-import aboutUs_s2 from '../../assets/images/aboutUs_s2.avif'
-import aboutUs_s3 from '../../assets/images/aboutUs_s3.avif'
-import aboutUs_s4 from '../../assets/images/aboutUs_s4.avif'
+import aboutUs_s2 from '../../assets/images/avif/aboutUs_s2.avif'
+import aboutUs_s3 from '../../assets/images/avif/aboutUs_s3.avif'
+import aboutUs_s4 from '../../assets/images/avif/aboutUs_s4.avif'
 import aboutUs_s7_c1_image from '../../assets/images/jpg/danil ava.jpg'
 import aboutUs_s7_c2_image from '../../assets/images/jpg/nurse ava.jpg'
 import aboutUs_s7_c3_image from '../../assets/images/jpg/bayba ava.jpg'
