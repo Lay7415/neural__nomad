@@ -1,4 +1,4 @@
-.advantages_s1_container {
+.aboutUs_s1_container {
     height: 110vh;
     background-color: aquamarine;
     background-image: url('../../../assets/images/jpg/aboutUs_s1.jpg');
@@ -6,31 +6,22 @@
     background-repeat: no-repeat;
 }
 
-.advantages_s1_contentContainer {
+.aboutUs_s1_contentContainer {
     background-color: #2b2b2b8c;
     height: 110vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
-    padding: 0 50px;
+    align-items: center;
 }
 
-.advantages_s1_title {
+.aboutUs_s1_title {
     font-size: 70px;
-    text-align: start;
+    text-align: center;
     font-weight: 600;
-    color: #3bb6b9;
-    margin-bottom: 20px;
-    width: 40%;
-}
-
-.advantages_s1_text {
-    font-size: 20px;
-    text-align: start;
-    font-weight: 400;
     color: white;
-    width: 50%;
+    margin-bottom: 20px;
+    margin-top: 100px;
 }
 
 @media (max-width: 1040px) {

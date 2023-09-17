@@ -27,10 +27,6 @@ export const navLinks = [
         path: "/contacts",
         name: "контакты",
     },
-    {
-        path: "/faq",
-        name: "FAQ",
-    },
 ];
 
 export const followUs = [

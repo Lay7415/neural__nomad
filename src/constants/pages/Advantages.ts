@@ -44,12 +44,7 @@ export const advantagesS2Description = {
         video: "",
         button: "advantages_s2_btnDemo",
     },
-    variant: {
-        container: {
-            visible: { opacity: 1, transition: { duration: 0.5 } },
-            hidden: { opacity: 0 }
-        },
-    },
+    variant: {},
     styles: {},
     buttonDescription: {
         text: "Запросить демо",
