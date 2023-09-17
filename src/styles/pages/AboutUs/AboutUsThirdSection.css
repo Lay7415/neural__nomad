@@ -1,0 +1,53 @@
+.aboutUs_s3_container {
+    display: flex;
+    min-height: 60vh;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+    padding: 40px 2%;
+}
+
+.aboutUs_s3_contentContainer {
+    max-width: 500px;
+    padding: 60px;
+}
+
+.aboutUs_s3_title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.aboutUs_s3_text {
+    font-size: 20px;
+    color: #000000;
+    font-size: 16px;
+}
+
+.aboutUs_s3_image {
+    max-width: 500px;
+    object-fit: cover;
+    min-width: 300px;
+    overflow: hidden;
+}
+
+@media (max-width: 520px) {
+    .aboutUs_s3_title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .aboutUs_s3_text {
+        font-size: 15px;
+        text-align: center;
+        border: none;
+    }
+
+    .aboutUs_s3_contentContainer {
+        padding: 0;
+        width: 300px;
+    }
+}

@@ -1,0 +1,58 @@
+.aboutUs_s6_container {
+    height: 110vh;
+}
+
+.aboutUs_s6_contentContainer {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.aboutUs_s6_title {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.aboutUs_s6_text {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    color:#000000;
+    width: 70%;
+}
+
+.aboutUs_s6_button {
+    color: #FFFFFF;
+    background-color: #009788;
+    border-color: #009788;
+    border-radius: 45px;
+    padding: 12px 20px 12px 20px;
+    border: none;
+    width: 160px;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.aboutUs_s6_button:hover {
+    background-color: #6292ca;
+    transition: background-color 0.5s;
+}
+
+@media (max-width: 1040px) {
+    .aboutUs_s6_title {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 475px) {
+    .aboutUs_s6_title {
+        font-size: 30px;
+    }
+}

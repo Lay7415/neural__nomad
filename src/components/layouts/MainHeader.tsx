@@ -43,7 +43,7 @@ const MainHeader = () => {
         })}
       </nav>
       <div className="mainLayout_header_btnContainer">
-        <button className="mainLayout_header_btnDemo">Демо</button>
+        <button className="mainLayout_header_btnDemo">Заказать демо</button>
       </div>
       <div className="mainLayout_header_mobile_burger_container">
         {isShow ? (
@@ -79,7 +79,7 @@ const MainHeader = () => {
           </nav>
           <div className="mainLayout_header_mobile_burger_btnContainer">
             <button className="mainLayout_header_mobile_burger_btnDemo">
-              Демо
+              Заказать демо
             </button>
           </div>
         </Popup>
