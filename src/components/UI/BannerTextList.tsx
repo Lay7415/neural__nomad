@@ -1,3 +1,8 @@
+type textDescriptionI = {
+  text: string;
+  title: string;
+};
+
 type Props = {
   classes: any;
   variant: any;
@@ -8,7 +13,7 @@ type Props = {
   };
   textDescription: {
     title: string;
-    text: string[];
+    text: textDescriptionI[];
   };
   video: {
     src: string;
@@ -69,18 +74,30 @@ const BannerTextList = (props: Props) => {
             className={props.classes.textContainer}
             style={props.styles.textContainer}
           >
-            {props.textDescription.text.map((item, index) => {
-              const itemClassName = `${props.classes.text + (index + 1)} ${
+            {props.textDescription.text.map(({ title, text }, index) => {
+              const textClassName = `${props.classes.text + (index + 1)} ${
                 props.classes.text
               }`;
+              const textTitleClassName = `${
+                props.classes.textTitle + (index + 1)
+              } ${props.classes.textTitle}`;
               return (
-                <p
-                  key={index}
-                  className={itemClassName}
-                  style={props.styles.text}
-                >
-                  {item}
-                </p>
+                <>
+                  <p
+                    key={index}
+                    className={textTitleClassName}
+                    style={props.styles.text}
+                  >
+                    {title}
+                  </p>
+                  <p
+                    key={index}
+                    className={textClassName}
+                    style={props.styles.text}
+                  >
+                    {text}
+                  </p>
+                </>
               );
             })}
           </div>
