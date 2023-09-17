@@ -1,9 +1,3 @@
-import { motion, useAnimation } from "framer-motion";
-
-import { useInView } from "react-intersection-observer";
-
-import { useEffect } from "react";
-
 type Props = {
   classes: any;
   variant: any;
@@ -24,36 +18,19 @@ type Props = {
 };
 
 const BannerTextList = (props: Props) => {
-  const control = useAnimation();
-  const [ref, inView] = useInView();
-
-  useEffect(() => {
-    if (inView) {
-      control.start("visible");
-    } else {
-      control.start("hidden");
-    }
-  }, [control, inView]);
-
   const conditionalImageOderVideoRender = () => {
     if (props.video.src) {
       return (
-        <motion.video
-          variants={props.variant.video}
-          initial="hidden"
-          animate={control}
+        <video
           className={props.classes.video}
           style={props.styles.video}
           {...props.video.config}
           src={props.video.src}
-        ></motion.video>
+        ></video>
       );
     } else if (props.imageSrc) {
       return (
-        <motion.img
-          variants={props.variant.image}
-          initial="hidden"
-          animate={control}
+        <img
           className={props.classes.image}
           style={props.styles.image}
           src={props.imageSrc}
@@ -65,37 +42,21 @@ const BannerTextList = (props: Props) => {
   const conditionalButtonRender = () => {
     if (props.buttonDescription.text) {
       return (
-        <motion.button
-          variants={props.variant.button}
-          initial="hidden"
-          animate={control}
+        <button
           className={props.classes.button}
           style={props.styles.button}
           {...props.buttonDescription.callbacks}
         >
           {props.buttonDescription.text}
-        </motion.button>
+        </button>
       );
     }
   };
   return (
-    <motion.div
-      ref={ref} 
-      variants={props.variant.container}
-      initial="hidden"
-      animate={control}
-      className={props.classes.container}
-      style={props.styles.container}
-    >
-      <motion.h1
-        variants={props.variant.title}
-        initial="hidden"
-        animate={control}
-        className={props.classes.title}
-        style={props.styles.title}
-      >
+    <div className={props.classes.container} style={props.styles.container}>
+      <h1 className={props.classes.title} style={props.styles.title}>
         {props.textDescription.title}
-      </motion.h1>
+      </h1>
       <div
         className={props.classes.contentContainer}
         style={props.styles.contentContainer}
@@ -113,16 +74,13 @@ const BannerTextList = (props: Props) => {
                 props.classes.text
               }`;
               return (
-                <motion.p
-                  variants={props.variant.text}
-                  initial="hidden"
-                  animate={control}
+                <p
                   key={index}
                   className={itemClassName}
                   style={props.styles.text}
                 >
                   {item}
-                </motion.p>
+                </p>
               );
             })}
           </div>
@@ -130,7 +88,7 @@ const BannerTextList = (props: Props) => {
         </div>
         {conditionalImageOderVideoRender()}
       </div>
-    </motion.div>
+    </div>
   );
 };
 
