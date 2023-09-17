@@ -1,10 +1,12 @@
 .mainLayout_footer_container {
-    background-color: #3579C9;
     display: flex;
     justify-content: start;
     flex-wrap: wrap;
     padding: 40px 50px;
     gap: 40px;
+    background-image: url('../../../assets/images/png/footer.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .mainLayout_footer_titles {
@@ -22,7 +24,6 @@
 
 .mainLayout_footer_Link {
     color: white;
-    transform: scale(1);
     transition: transform 0.5s, color 0.5s;
 }
 

@@ -1,0 +1,71 @@
+.advantages_s2_container {
+    display: flex;
+    min-height: 80vh;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-content: center;
+    gap: 50px;
+    padding: 40px 2%;
+}
+
+.advantages_s2_contentContainer {
+    max-width: 500px;
+    padding: 60px;
+}
+
+.advantages_s2_title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.advantages_s2_text {
+    font-size: 20px;
+    color: #000000;
+    font-size: 16px;
+}
+
+.advantages_s2_image {
+    max-width: 500px;
+    object-fit: cover;
+    min-width: 300px;
+    overflow: hidden;
+}
+
+.advantages_s2_btnDemo {
+    color: #FFFFFF;
+    background-color: #f58357;
+    border-radius: 45px;
+    padding: 12px 20px 12px 20px;
+    border: none;
+    max-width: 440px;
+    min-width: 300px;
+    font-size: 16px;
+    margin-top: 40px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.advantages_s2_btnDemo:hover {
+    background-color: #f66a33;
+    transition: background-color 0.5s;
+}
+
+@media (max-width: 520px) {
+    .advantages_s2_title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .advantages_s2_text {
+        font-size: 15px;
+        text-align: center;
+        border: none;
+    }
+
+    .advantages_s2_contentContainer {
+        padding: 0;
+        width: 300px;
+    }
+}

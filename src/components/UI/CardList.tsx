@@ -1,9 +1,3 @@
-import { motion, useAnimation } from "framer-motion";
-
-import { useInView } from "react-intersection-observer";
-
-import { useEffect } from "react";
-
 type Props = {
   classes: any;
   variant: any;
@@ -21,60 +15,28 @@ type Props = {
 };
 
 const CardList = (props: Props) => {
-  const control = useAnimation();
-  const [ref, inView] = useInView();
-
-  useEffect(() => {
-    if (inView) {
-      control.start("visible");
-    } else {
-      control.start("hidden");
-    }
-  }, [control, inView]);
-  console.log(typeof props.cards, typeof props.ChildComponent, "CardList 18");
+  // console.log(typeof props.cards, typeof props.ChildComponent, "CardList 18");
   const conditionalButtonRender = () => {
     if (props.buttonDescription.text) {
       return (
-        <motion.button
-          variants={props.variant.button}
-          initial="hidden"
-          animate={control}
+        <button
           className={props.classes.button}
           style={props.styles.button}
           {...props.buttonDescription.callbacks}
         >
           {props.buttonDescription.text}
-        </motion.button>
+        </button>
       );
     }
   };
   return (
-    <motion.div
-      ref={ref}
-      variants={props.variant.container}
-      initial="hidden"
-      animate={control}
-      className={props.classes.container}
-      style={props.styles.container}
-    >
-      <motion.h1
-        variants={props.variant.title}
-        initial="hidden"
-        animate={control}
-        className={props.classes.title}
-        style={props.styles.title}
-      >
+    <div className={props.classes.container} style={props.styles.container}>
+      <h1 className={props.classes.title} style={props.styles.title}>
         {props.textDescription.title}
-      </motion.h1>
-      <motion.p
-        variants={props.variant.text}
-        initial="hidden"
-        animate={control}
-        className={props.classes.text}
-        style={props.styles.text}
-      >
+      </h1>
+      <p className={props.classes.text} style={props.styles.text}>
         {props.textDescription.text}
-      </motion.p>
+      </p>
       <div
         className={props.classes.cardContainer}
         style={props.styles.cardContainer}
@@ -84,7 +46,7 @@ const CardList = (props: Props) => {
         })}
       </div>
       {conditionalButtonRender()}
-    </motion.div>
+    </div>
   );
 };
 
