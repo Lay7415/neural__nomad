@@ -163,31 +163,6 @@ export const advantagesS4Description = {
             },
             imageSrc: advantages_s4_c2_image,
         },
-        {
-            classes: {
-                container: "advantages_s4_card_container",
-                title: "advantages_s4_card_title",
-                text: "advantages_s4_card_text",
-                image: "advantages_s4_card_image",
-                video: "",
-                button: "",
-            },
-            variant: {},
-            styles: {},
-            buttonDescription: {
-                text: "",
-                callbacks: {},
-            },
-            textDescription: {
-                title: "Автоматическая отчётность",
-                text: "Наша система генерирует готовые отчёты в удобном виде: таблицы, графики, диаграммы. Вы экономите время на обработку данных",
-            },
-            video: {
-                src: '',
-                config: {},
-            },
-            imageSrc: advantages_s4_c3_image,
-        },
     ],
     ChildComponent: Banner
 };

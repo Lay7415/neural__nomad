@@ -2,10 +2,7 @@ import { FC } from "react";
 import Main from "./pages/Main";
 import { Navigate, Routes, Route } from "react-router-dom";
 import AboutUs from "./pages/AboutUs";
-import Cost from "./pages/Cost";
 import Advantages from "./pages/Advantages";
-import Contacts from "./pages/Contacts";
-// import './styles/global.css '
 
 interface RoutesI {
   path: string;

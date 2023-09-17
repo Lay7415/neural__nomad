@@ -1,5 +1,4 @@
-import { AnimatePresence, motion } from "framer-motion";
-import { ReactNode, useState } from "react";
+import { ReactNode } from "react";
 
 type Props = {
   classes: any;
@@ -14,7 +13,13 @@ const Popup = (props: Props) => {
   return (
     <>
       {isShow && (
-        <div {...variant} style={styles.container} className={classes.container}>{children}</div>
+        <div
+          {...variant}
+          style={styles.container}
+          className={classes.container}
+        >
+          {children}
+        </div>
       )}
     </>
   );
