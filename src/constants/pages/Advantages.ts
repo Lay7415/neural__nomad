@@ -1,10 +1,10 @@
-import advantages_s2_image from '../../assets/images/main_s4_card3.avif'
+import advantages_s2_image from '../../assets/images/avif/main_s4_card3.avif'
 import Banner from '../../components/UI/Banner';
 import advantages_s3_image from '../../assets/images/png/advantages_s3.png'
 import advantages_s5_image from '../../assets/images/png/main_s5.png'
-import advantages_s4_c1_image from '../../assets/images/advantages_s4_c1.avif'
-import advantages_s4_c2_image from '../../assets/images/advantages_s4_c2.avif'
-import advantages_s4_c3_image from '../../assets/images/advantages_s4_c3.avif'
+import advantages_s4_c1_image from '../../assets/images/avif/advantages_s4_c1.avif'
+import advantages_s4_c2_image from '../../assets/images/avif/advantages_s4_c2.avif'
+import advantages_s4_c3_image from '../../assets/images/avif/advantages_s4_c3.avif'
 
 
 export const advantagesS1Description = {

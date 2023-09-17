@@ -26,16 +26,8 @@ const routes: RoutesI[] = [
     component: <AboutUs />,
   },
   {
-    path: "/cost",
-    component: <Cost />,
-  },
-  {
     path: "/advantages",
     component: <Advantages />,
-  },
-  {
-    path: "/contacts",
-    component: <Contacts />,
   },
 ];
 

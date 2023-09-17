@@ -16,16 +16,8 @@ export const navLinks = [
         name: "О нас",
     },
     {
-        path: "/cost",
-        name: "Стоимость",
-    },
-    {
         path: "/advantages",
         name: "Примущества",
-    },
-    {
-        path: "/contacts",
-        name: "контакты",
     },
 ];
 

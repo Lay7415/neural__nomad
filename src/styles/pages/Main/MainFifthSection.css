@@ -1,0 +1,62 @@
+.main_s5_container {
+    height: 110vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main_s5_contentContainer {
+    background-color: white;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.main_s5_title {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+    color: #2c2c51;
+    margin-bottom: 20px;
+}
+
+.main_s5_text {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    color: #1e1e1e;
+    width: 70%;
+}
+
+.main_s5_button {
+    color: #FFFFFF;
+    background-color: #009788;
+    border-color: #009788;
+    border-radius: 45px;
+    padding: 12px 20px 12px 20px;
+    border: none;
+    width: 160px;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.main_s5_button:hover {
+    background-color: #6292ca;
+    transition: background-color 0.5s;
+}
+
+@media (max-width: 1040px) {
+    .main_s5_title {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 475px) {
+    .main_s5_title {
+        font-size: 30px;
+    }
+}
