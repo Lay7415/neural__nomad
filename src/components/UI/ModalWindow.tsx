@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { ReactNode } from "react";
 
-const ModalWindow = () => {
-  return (
-    <div>ModalWindow</div>
-  )
-}
+type Props = {
+  classes: any;
+  variant: any;
+  styles: any;
+  children: ReactNode | string;
+  isShow: boolean;
+};
 
-export default ModalWindow
+const ModalWindow = (props: Props) => {
+  return <div>ModalWindow</div>;
+};
+
+export default ModalWindow;

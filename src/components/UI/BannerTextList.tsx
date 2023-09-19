@@ -91,7 +91,7 @@ const BannerTextList = (props: Props) => {
                     {title}
                   </p>
                   <p
-                    key={index}
+                    key={index+'t'}
                     className={textClassName}
                     style={props.styles.text}
                   >

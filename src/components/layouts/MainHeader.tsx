@@ -1,9 +1,10 @@
 import { logotype, navLinks } from "../../constants/components/MainLayout";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import Popup from "../UI/Popup";
 import { useState } from "react";
+import Popup from "../UI/Popup";
 import burger_icon from "../../assets/images/svg/burger.svg";
 import exit from "../../assets/images/svg/exit_x.svg";
+import MobileNavbar from "./PopupWindows/MobileNavbar";
 
 const MainHeader = () => {
   const location = useLocation();
@@ -43,7 +44,7 @@ const MainHeader = () => {
         })}
       </nav>
       <div className="mainLayout_header_btnContainer">
-        <button className="mainLayout_header_btnDemo">Демо</button>
+        <button className="mainLayout_header_btnDemo">Заказать демо</button>
       </div>
       <div className="mainLayout_header_mobile_burger_container">
         {isShow ? (
@@ -60,28 +61,7 @@ const MainHeader = () => {
           ></img>
         )}
         <Popup {...popupDescription} isShow={isShow}>
-          <nav className="mainLayout_header_mobile_burger_navbar">
-            {navLinks.map((item, index) => {
-              return (
-                <Link
-                  style={{
-                    borderBottom:
-                      location.pathname === item.path ? "1px solid white" : "",
-                  }}
-                  key={index}
-                  to={item.path}
-                  className="mainLayout_header_mobile_burger_link"
-                >
-                  {item.name}
-                </Link>
-              );
-            })}
-          </nav>
-          <div className="mainLayout_header_mobile_burger_btnContainer">
-            <button className="mainLayout_header_mobile_burger_btnDemo">
-              Демо
-            </button>
-          </div>
+          <MobileNavbar />
         </Popup>
       </div>
     </header>
