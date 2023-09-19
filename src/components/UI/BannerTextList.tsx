@@ -20,6 +20,7 @@ type Props = {
     config: any;
   };
   imageSrc: string;
+  imageCallback: any;
 };
 
 const BannerTextList = (props: Props) => {
@@ -36,6 +37,7 @@ const BannerTextList = (props: Props) => {
     } else if (props.imageSrc) {
       return (
         <img
+          {...props.imageCallback}
           className={props.classes.image}
           style={props.styles.image}
           src={props.imageSrc}
@@ -91,7 +93,7 @@ const BannerTextList = (props: Props) => {
                     {title}
                   </p>
                   <p
-                    key={index+'t'}
+                    key={index + "t"}
                     className={textClassName}
                     style={props.styles.text}
                   >
