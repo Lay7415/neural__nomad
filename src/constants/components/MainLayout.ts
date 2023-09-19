@@ -19,6 +19,10 @@ export const navLinks = [
         path: "/advantages",
         name: "Преимущества",
     },
+    {
+        path: "/contacts",
+        name: "Контакты",
+    },
 ];
 
 export const followUs = [

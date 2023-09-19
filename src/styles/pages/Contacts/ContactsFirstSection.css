@@ -1,0 +1,113 @@
+.contacts_s1_container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 40px 200px 40px 40px;
+    background-image: url("../../../assets/images/contacts_s1.gif");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position-x: 10%;
+    background-position-y: center;
+    background-color: #040204;
+}
+
+.contacts_s1_form {
+    background-color: aqua;
+    width: 500px;
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.contacts_s1_title {
+    text-align: start;
+    width: 500px;
+    margin-bottom: 20px;
+    color: #00b5a3;
+    font-size: 40px;
+    stroke: #040204;
+}
+
+.contacts_s1_textfield {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.contacts_s1_button {
+    padding: 10px;
+    background-color: #f58357;
+    border: none;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media (max-width: 1270px) {
+    .contacts_s1_container {
+        align-items: center;
+        padding: 0;
+        background-position: center;
+        background-size: 400px;
+    }
+
+    .contacts_s1_title {
+        /* text-align: center; */
+        margin-top: 450px;
+    }
+}
+
+@media (max-width: 560px) {
+    .contacts_s1_form {
+        width: 300px;
+    }
+
+    .contacts_s1_title {
+        width: 300px;
+        font-size: 30px;
+    }
+}
+
+
+.contacts_request_message {
+    position: fixed;
+    z-index: 900;
+    background-color: #5f5f5f52;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts_popup_title {
+    font-size: 40px;
+}
+
+.contacts_popup_container {
+    width: 40%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contacts_popup_button {
+    padding: 10px;
+    background-color: #f58357;
+    border: none;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100px;
+    margin-top: 20px;
+}

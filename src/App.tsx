@@ -3,6 +3,7 @@ import Main from "./pages/Main";
 import { Navigate, Routes, Route } from "react-router-dom";
 import AboutUs from "./pages/AboutUs";
 import Advantages from "./pages/Advantages";
+import Contacts from "./pages/Contacts";
 
 interface RoutesI {
   path: string;
@@ -25,6 +26,10 @@ const routes: RoutesI[] = [
   {
     path: "/advantages",
     component: <Advantages />,
+  },
+  {
+    path: "/contacts",
+    component: <Contacts />,
   },
 ];
 
