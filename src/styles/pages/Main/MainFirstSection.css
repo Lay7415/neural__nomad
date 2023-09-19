@@ -42,11 +42,13 @@
     .main_s1_title {
         text-align: center;
         width: 100%;
+        font-size: 40px;
     }
 
     .main_s1_text {
         text-align: center;
         width: 100%;
+        font-size: 20px;
     }
 }
 

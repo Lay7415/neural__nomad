@@ -6,7 +6,6 @@ import aboutUs_s7_c1_image from '../../assets/images/jpg/danil ava.jpg'
 import aboutUs_s7_c2_image from '../../assets/images/jpg/nurse ava.jpg'
 import aboutUs_s7_c3_image from '../../assets/images/jpg/bayba ava.jpg'
 import aboutUs_s7_c4_image from '../../assets/images/png/adilet ava.png'
-import aboutUs_s7_c5_image from '../../assets/images/jpg/bayba ava.jpg'
 
 export const aboutUsS1Description = {
     classes: {
@@ -72,7 +71,7 @@ export const aboutUsS3Description = {
     },
     textDescription: {
         title: "Идея",
-        text: "Они поняли, что принимать важные решения о маркетинге и ассортименте, не имея полной картины о покупателях, было чрезвычайно сложно. Именно тогда и зародилась идея разработать технологию, которая будет решать эту проблему..",
+        text: "Они поняли, что принимать важные решения о маркетинге и ассортименте, не имея полной картины о покупателях, было чрезвычайно сложно. Именно тогда и зародилась идея разработать технологию, которая будет решать эту проблему.",
     },
     video: {
         src: '',
@@ -145,7 +144,7 @@ export const aboutUsS6Description = {
     },
     textDescription: {
         title: "Наши планы на будущее",
-        text: "Мы хотим продолжать совершенствовать технологию и расширять присутствие на новых рынках. Мы верим, что наш продукт способен кардинально изменить подход розничных сетей к аналитике посетителей..",
+        text: "Мы хотим продолжать совершенствовать технологию и расширять присутствие на новых рынках. Мы верим, что наш продукт способен кардинально изменить подход розничных сетей к аналитике посетителей.",
     },
     video: {
         src: '',
@@ -191,7 +190,7 @@ export const aboutUsS7Description = {
             },
             textDescription: {
                 title: "Данил Попов",
-                text: "Team-Lead и Task manager",
+                text: "Team-Lead и Task manager.",
             },
             video: {
                 src: '',
@@ -216,7 +215,7 @@ export const aboutUsS7Description = {
             },
             textDescription: {
                 title: "Нарынбаев Нурслутан",
-                text: "Data sience и Backend-разработчик",
+                text: "Data sience и Backend-разработчик.",
             },
             video: {
                 src: '',
@@ -241,7 +240,7 @@ export const aboutUsS7Description = {
             },
             textDescription: {
                 title: "Жаныбеков Байболот",
-                text: "Front-разработчик",
+                text: "Front-разработчик.",
             },
             video: {
                 src: '',
@@ -266,38 +265,13 @@ export const aboutUsS7Description = {
             },
             textDescription: {
                 title: "Адиль Аширов",
-                text: "Data sience разработчик",
+                text: "Data sience разработчик.",
             },
             video: {
                 src: '',
                 config: {},
             },
             imageSrc: aboutUs_s7_c4_image,
-        },
-        {
-            classes: {
-                container: "aboutUs_s7_card_container",
-                title: "aboutUs_s7_card_title",
-                text: "aboutUs_s7_card_text",
-                image: "aboutUs_s7_card_image",
-                video: "",
-                button: "",
-            },
-            variant: {},
-            styles: {},
-            buttonDescription: {
-                text: "",
-                callbacks: {},
-            },
-            textDescription: {
-                title: "Дона",
-                text: "Front-разработчик",
-            },
-            video: {
-                src: '',
-                config: {},
-            },
-            imageSrc: aboutUs_s7_c5_image,
         },
     ],
     ChildComponent: Banner

@@ -87,6 +87,7 @@
     z-index: 1000;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .mainLayout_header_mobile_burger_navbar {
@@ -154,11 +155,4 @@
     .mainLayout_header_mobile_burger_container {
         display: block;
     }
-}
-
-@media (max-width: 450px) {
-    .mainLayout_header_logotype {
-        margin-left: 0;
-    }
-
 }

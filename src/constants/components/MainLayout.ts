@@ -17,7 +17,7 @@ export const navLinks = [
     },
     {
         path: "/advantages",
-        name: "Примущества",
+        name: "Преимущества",
     },
 ];
 

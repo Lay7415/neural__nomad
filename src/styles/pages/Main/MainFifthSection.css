@@ -55,7 +55,7 @@
     }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 450px) {
     .main_s5_title {
         font-size: 30px;
     }

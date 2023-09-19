@@ -23,10 +23,11 @@
 }
 
 .main_s4_title {
-    font-size: 80px;
-    margin-bottom: 30px;
+    font-size: 60px;
+    margin-bottom: 50px;
     color: #009788;
     text-align: center;
+    width: 70%;
 }
 
 .main_s4_text {
@@ -39,7 +40,6 @@
     padding-left: 40px;
     margin: 20px 0;
     color: #7e7999;
-
 }
 
 .main_s4_textTitle {
@@ -82,5 +82,16 @@
 
     .main_s4_contentContainer {
         padding: 20px;
+    }
+
+    .main_s4_textTitle {
+        font-size: 20px;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 450px) {
+    .main_s4_title {
+        font-size: 30px;
     }
 }
